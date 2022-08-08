@@ -6,6 +6,10 @@
   --sub-titulo-Desktop: 50px;
   --sub-section-Desktop: 45px;
   --body-regular: 18px;
+  --titulo-Mobile: 40px;
+  --sub-titulo-Mobile: 25px;
+  --sub-section-Mobile: 18px;
+  --body-regular-Mobile: 16px;
 }
 html {
   font-size: 62.5%;
@@ -32,6 +36,11 @@ h1 {
   margin: 0;
   font-weight: 500;
 }
+@media (max-width: 810px) {
+    h1{
+        font-size: var(--titulo-Mobile);
+    }
+}
 h2 {
   font-size: var(--sub-section-Desktop);
   text-align: center;
@@ -44,6 +53,17 @@ p {
   color: var(--grey);
   font-size: var(--body-regular);
   text-align: center;
+}
+@media (max-width: 810px) {
+    h2{
+        font-size: var(--sub-section-Mobile);
+    }
+    p{
+        font-size: var(--body-regular-Mobile);
+    }
+    h4{
+        font-size: small;
+    }
 }
 /* Barra de navegacion */
 header {
@@ -68,7 +88,17 @@ header {
 #menu,
 #menu-check {
   display: none;
-  justify-content: space-between;
+}
+#imagen2{
+    display: none;
+}
+@media (max-width: 810px) {
+    #imagen1{
+        display: none;
+    }
+    #imagen2{
+        display: block;
+    }
 }
 @media (max-width: 1050px) {
   .navbar {
@@ -81,6 +111,7 @@ header {
   }
   #menu {
     display: block;
+    margin-right: 5rem;
   }
   #menu span:hover {
     color: var(--grey);
@@ -113,6 +144,14 @@ header {
 .icons {
   display: flex;
   gap: 12rem;
+}
+@media (max-width: 810px) {
+    .hero h2 {
+        font-size: var(--sub-titulo-Mobile);
+    }
+    .icons{
+        gap: 6rem;
+    }
 }
 /* Seccion Acerca */
 .section-acerca {
@@ -277,6 +316,12 @@ span {
   font-size: small;
   margin: 0;
 }
+@media (max-width: 810px) {
+    .section-contacto p {
+        font-size: x-small;
+    }
+}
+
 .icon-contacto {
   width: 8rem;
   height: 8rem;
