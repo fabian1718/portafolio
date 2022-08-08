@@ -70,7 +70,7 @@ header {
   background-color: var(--black);
   width: 100%;
   margin-top: 2rem;
-  padding: 2rem 10% 0rem 0;
+  padding: 2rem 10% 2rem 0;
   display: flex;
   justify-content: end;
   position: sticky;
